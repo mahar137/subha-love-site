@@ -1,0 +1,8 @@
+const stickers = [
+  'https://media.giphy.com/media/l4FGGafcOHmrlQxG0/giphy.gif',
+  'https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif',
+  'https://media.giphy.com/media/f9k1tV7HyORcngKF8v/giphy.gif',
+  'https://media.giphy.com/media/jUwpNzg9IcyrK/giphy.gif',
+  'https://media.giphy.com/media/xUOxf4o9Yyb8xHBo4w/giphy.gif'
+];
+
