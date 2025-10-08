@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Subha 💖</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: #fff0f6;
+      color: #5e005e;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff69b4;
+    }
+    .section {
+      margin: 30px 0;
+      background: #ffe6f2;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    button {
+      background-color: #ffb6c1;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi Subha 💕</h1>
+  <p>This is a cute little corner made by Zonorain just for you!</p>
+
+  <div class="section">
+    <h2>💖 Cute Stickers</h2>
+    <p>Click to see some stickers!</p>
+    <button onclick="showStickers()">Show Stickers</button>
+    <div id="stickers"></div>
+  </div>
+
+  <div class="section">
+    <h2>🌸 Cute Tasks for You</h2>
+    <ul id="tasks">
+      <li>Send Zonorain a voice note saying "I love you"</li>
+      <li>Draw a heart and send a pic</li>
+      <li>Say "Subha loves Zonorain" 3 times with a smile</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎮 Lovers Game: Would You Rather?</h2>
+    <button onclick="playGame()">Click to Play</button>
+    <p id="game-question"></p>
+  </div>
+
+  <div class="section">
+    <h2>💌 Final Message</h2>
+    <p>Subha, you are the light of my world, and I made this just to see you smile. 💗 <br>
+    Forever yours, <strong>Zonorain</strong> 🌙</p>
+  </div>
+
+  <script>
+    function showStickers() {
+      const stickers = [
+        'https://media.giphy.com/media/l4FGGafcOHmrlQxG0/giphy.gif',
+        'https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif',
+        'https://media.giphy.com/media/f9k1tV7HyORcngKF8v/giphy.gif'
+      ];
+      const container = document.getElementById("stickers");
+      container.innerHTML = "";
+      stickers.forEach(url => {
+        const img = document.createElement("img");
+        img.src = url;
+        img.style.width = "100px";
+        img.style.margin = "10px";
+        container.appendChild(img);
+      });
+    }
+
+    function playGame() {
+      const questions = [
+        "Would you rather cuddle forever or have endless video calls?",
+        "Would you rather go on a picnic or a movie date?",
+        "Would you rather eat chocolate with me or ice cream on your own?",
+        "Would you rather dance in the rain or watch the stars together?"
+      ];
+      const question = questions[Math.floor(Math.random() * questions.length)];
+      document.getElementById("game-question").innerText = question;
+    }
+  </script>
+</body>
+</html>
